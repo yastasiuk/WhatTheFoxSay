@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0704B0EC2365060D00C23CFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704B0EB2365060D00C23CFA /* AppDelegate.swift */; };
 		0704B0EE2365060D00C23CFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704B0ED2365060D00C23CFA /* SceneDelegate.swift */; };
-		0704B0F02365060D00C23CFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704B0EF2365060D00C23CFA /* ContentView.swift */; };
 		0704B0F22365061000C23CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0704B0F12365061000C23CFA /* Assets.xcassets */; };
 		0704B0F52365061000C23CFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0704B0F42365061000C23CFA /* Preview Assets.xcassets */; };
-		0704B0F82365061000C23CFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0704B0F62365061000C23CFA /* LaunchScreen.storyboard */; };
 		0704B1032365061000C23CFA /* WhatTheFoxSayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704B1022365061000C23CFA /* WhatTheFoxSayTests.swift */; };
 		0704B10E2365061000C23CFA /* WhatTheFoxSayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704B10D2365061000C23CFA /* WhatTheFoxSayUITests.swift */; };
+		0704B11D2365073800C23CFA /* AnimalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704B11C2365073800C23CFA /* AnimalList.swift */; };
+		0704B1202365084B00C23CFA /* Animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 0704B11F2365084B00C23CFA /* Animals.json */; };
+		0704B126236509C600C23CFA /* AnimalsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704B125236509C600C23CFA /* AnimalsService.swift */; };
+		0704B12923650A4D00C23CFA /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0704B12823650A4D00C23CFA /* SwiftyJSON */; };
+		0704B12C23650AB700C23CFA /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704B12B23650AB700C23CFA /* DataError.swift */; };
+		0704B13023650B9500C23CFA /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704B12F23650B9500C23CFA /* Animal.swift */; };
+		0704B15823663C5F00C23CFA /* CodeData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0704B15623663C5F00C23CFA /* CodeData.xcdatamodeld */; };
+		07C6903B236A118700DD3D6E /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C6903A236A118700DD3D6E /* LazyView.swift */; };
+		07EB298D2367C25700DF5358 /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB298C2367C25700DF5358 /* ImageLoaderService.swift */; };
+		07EB298F2367D23C00DF5358 /* AnimalAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB298E2367D23C00DF5358 /* AnimalAvatar.swift */; };
+		07EB29912367D32900DF5358 /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB29902367D32900DF5358 /* AnimalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +45,27 @@
 
 /* Begin PBXFileReference section */
 		0704B0E82365060D00C23CFA /* WhatTheFoxSay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatTheFoxSay.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0704B0EB2365060D00C23CFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0704B0ED2365060D00C23CFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0704B0EF2365060D00C23CFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0704B0F12365061000C23CFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0704B0EB2365060D00C23CFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../WhatTheFoxSay/AppDelegate.swift; sourceTree = "<group>"; };
+		0704B0ED2365060D00C23CFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../WhatTheFoxSay/SceneDelegate.swift; sourceTree = "<group>"; };
+		0704B0F12365061000C23CFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../WhatTheFoxSay/Assets.xcassets; sourceTree = "<group>"; };
 		0704B0F42365061000C23CFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0704B0F72365061000C23CFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0704B0F92365061000C23CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0704B0F92365061000C23CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ../WhatTheFoxSay/Info.plist; sourceTree = "<group>"; };
 		0704B0FE2365061000C23CFA /* WhatTheFoxSayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatTheFoxSayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0704B1022365061000C23CFA /* WhatTheFoxSayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheFoxSayTests.swift; sourceTree = "<group>"; };
 		0704B1042365061000C23CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0704B1092365061000C23CFA /* WhatTheFoxSayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatTheFoxSayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0704B10D2365061000C23CFA /* WhatTheFoxSayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatTheFoxSayUITests.swift; sourceTree = "<group>"; };
 		0704B10F2365061000C23CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0704B11C2365073800C23CFA /* AnimalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalList.swift; sourceTree = "<group>"; };
+		0704B11F2365084B00C23CFA /* Animals.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = Animals.json; sourceTree = "<group>"; };
+		0704B125236509C600C23CFA /* AnimalsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsService.swift; sourceTree = "<group>"; };
+		0704B12B23650AB700C23CFA /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		0704B12F23650B9500C23CFA /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		0704B15723663C5F00C23CFA /* CodeData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CodeData.xcdatamodel; sourceTree = "<group>"; };
+		07C6903A236A118700DD3D6E /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		07EB298C2367C25700DF5358 /* ImageLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
+		07EB298E2367D23C00DF5358 /* AnimalAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalAvatar.swift; sourceTree = "<group>"; };
+		07EB29902367D32900DF5358 /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0704B12923650A4D00C23CFA /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +97,7 @@
 		0704B0DF2365060D00C23CFA = {
 			isa = PBXGroup;
 			children = (
-				0704B0EA2365060D00C23CFA /* WhatTheFoxSay */,
+				07162A8D236B99FD009225EC /* WhatTheFoxSay */,
 				0704B1012365061000C23CFA /* WhatTheFoxSayTests */,
 				0704B10C2365061000C23CFA /* WhatTheFoxSayUITests */,
 				0704B0E92365060D00C23CFA /* Products */,
@@ -96,26 +114,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0704B0EA2365060D00C23CFA /* WhatTheFoxSay */ = {
-			isa = PBXGroup;
-			children = (
-				0704B0EB2365060D00C23CFA /* AppDelegate.swift */,
-				0704B0ED2365060D00C23CFA /* SceneDelegate.swift */,
-				0704B0EF2365060D00C23CFA /* ContentView.swift */,
-				0704B0F12365061000C23CFA /* Assets.xcassets */,
-				0704B0F62365061000C23CFA /* LaunchScreen.storyboard */,
-				0704B0F92365061000C23CFA /* Info.plist */,
-				0704B0F32365061000C23CFA /* Preview Content */,
-			);
-			path = WhatTheFoxSay;
-			sourceTree = "<group>";
-		};
 		0704B0F32365061000C23CFA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
 				0704B0F42365061000C23CFA /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			name = "Preview Content";
+			path = "../WhatTheFoxSay/Preview Content";
 			sourceTree = "<group>";
 		};
 		0704B1012365061000C23CFA /* WhatTheFoxSayTests */ = {
@@ -136,6 +141,82 @@
 			path = WhatTheFoxSayUITests;
 			sourceTree = "<group>";
 		};
+		0704B11B236506DB00C23CFA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0704B11C2365073800C23CFA /* AnimalList.swift */,
+				07EB298E2367D23C00DF5358 /* AnimalAvatar.swift */,
+				07EB29902367D32900DF5358 /* AnimalView.swift */,
+				07C6903A236A118700DD3D6E /* LazyView.swift */,
+			);
+			name = ViewControllers;
+			path = ../WhatTheFoxSay/ViewControllers;
+			sourceTree = "<group>";
+		};
+		0704B11E2365083500C23CFA /* DataMocks */ = {
+			isa = PBXGroup;
+			children = (
+				0704B11F2365084B00C23CFA /* Animals.json */,
+			);
+			name = DataMocks;
+			path = ../WhatTheFoxSay/DataMocks;
+			sourceTree = "<group>";
+		};
+		0704B1232365099C00C23CFA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0704B125236509C600C23CFA /* AnimalsService.swift */,
+				07EB298C2367C25700DF5358 /* ImageLoaderService.swift */,
+			);
+			name = Services;
+			path = ../WhatTheFoxSay/Services;
+			sourceTree = "<group>";
+		};
+		0704B12A23650A8C00C23CFA /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				0704B12B23650AB700C23CFA /* DataError.swift */,
+			);
+			name = Errors;
+			path = ../WhatTheFoxSay/Errors;
+			sourceTree = "<group>";
+		};
+		0704B12D23650B7700C23CFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0704B12F23650B9500C23CFA /* Animal.swift */,
+			);
+			name = Models;
+			path = ../WhatTheFoxSay/Models;
+			sourceTree = "<group>";
+		};
+		0704B15523663C4700C23CFA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0704B15623663C5F00C23CFA /* CodeData.xcdatamodeld */,
+			);
+			name = CoreData;
+			path = ../WhatTheFoxSay/CoreData;
+			sourceTree = "<group>";
+		};
+		07162A8D236B99FD009225EC /* WhatTheFoxSay */ = {
+			isa = PBXGroup;
+			children = (
+				0704B15523663C4700C23CFA /* CoreData */,
+				0704B12D23650B7700C23CFA /* Models */,
+				0704B12A23650A8C00C23CFA /* Errors */,
+				0704B1232365099C00C23CFA /* Services */,
+				0704B11E2365083500C23CFA /* DataMocks */,
+				0704B11B236506DB00C23CFA /* ViewControllers */,
+				0704B0EB2365060D00C23CFA /* AppDelegate.swift */,
+				0704B0ED2365060D00C23CFA /* SceneDelegate.swift */,
+				0704B0F12365061000C23CFA /* Assets.xcassets */,
+				0704B0F92365061000C23CFA /* Info.plist */,
+				0704B0F32365061000C23CFA /* Preview Content */,
+			);
+			path = WhatTheFoxSay;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +233,9 @@
 			dependencies = (
 			);
 			name = WhatTheFoxSay;
+			packageProductDependencies = (
+				0704B12823650A4D00C23CFA /* SwiftyJSON */,
+			);
 			productName = WhatTheFoxSay;
 			productReference = 0704B0E82365060D00C23CFA /* WhatTheFoxSay.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +308,9 @@
 				Base,
 			);
 			mainGroup = 0704B0DF2365060D00C23CFA;
+			packageReferences = (
+				0704B12723650A4D00C23CFA /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 0704B0E92365060D00C23CFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,7 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0704B0F82365061000C23CFA /* LaunchScreen.storyboard in Resources */,
+				0704B1202365084B00C23CFA /* Animals.json in Resources */,
 				0704B0F52365061000C23CFA /* Preview Assets.xcassets in Resources */,
 				0704B0F22365061000C23CFA /* Assets.xcassets in Resources */,
 			);
@@ -267,9 +354,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07EB29912367D32900DF5358 /* AnimalView.swift in Sources */,
+				07EB298D2367C25700DF5358 /* ImageLoaderService.swift in Sources */,
+				0704B12C23650AB700C23CFA /* DataError.swift in Sources */,
 				0704B0EC2365060D00C23CFA /* AppDelegate.swift in Sources */,
+				0704B15823663C5F00C23CFA /* CodeData.xcdatamodeld in Sources */,
+				0704B11D2365073800C23CFA /* AnimalList.swift in Sources */,
+				0704B126236509C600C23CFA /* AnimalsService.swift in Sources */,
+				07C6903B236A118700DD3D6E /* LazyView.swift in Sources */,
+				0704B13023650B9500C23CFA /* Animal.swift in Sources */,
+				07EB298F2367D23C00DF5358 /* AnimalAvatar.swift in Sources */,
 				0704B0EE2365060D00C23CFA /* SceneDelegate.swift in Sources */,
-				0704B0F02365060D00C23CFA /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,17 +398,6 @@
 			targetProxy = 0704B10A2365061000C23CFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0704B0F62365061000C23CFA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0704B0F72365061000C23CFA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0704B1102365061000C23CFA /* Debug */ = {
@@ -444,7 +528,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yastasiuk.WhatTheFoxSay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WhatTheFoxSay;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,7 +548,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yastasiuk.WhatTheFoxSay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WhatTheFoxSay;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -594,6 +678,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0704B12723650A4D00C23CFA /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0704B12823650A4D00C23CFA /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0704B12723650A4D00C23CFA /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0704B15623663C5F00C23CFA /* CodeData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0704B15723663C5F00C23CFA /* CodeData.xcdatamodel */,
+			);
+			currentVersion = 0704B15723663C5F00C23CFA /* CodeData.xcdatamodel */;
+			path = CodeData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0704B0E02365060D00C23CFA /* Project object */;
 }

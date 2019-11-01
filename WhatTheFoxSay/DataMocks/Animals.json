@@ -1,0 +1,27 @@
+{
+    "animals": [{
+        "id": "00112233-4455-6677-8899-aabbccddeef0",
+        "name": "Penguins",
+        "avatarURI": "https://i.pinimg.com/originals/3b/e2/1a/3be21a56723523fb401f1ef887e213f7.jpg",
+        "description": "Penguins love to swim in the ice cold ocean water. They can swim very fast and can leap out of the water and dive deep looking for food. A layer of fat together with a layer of air keeps penguins warm in the cold water and almost any weather.",
+        "imagesURI": ["https://www.thespruce.com/thmb/yuPlb2OETaOzWUh-grzhqNhJCMM=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/emp-family-58a6d2515f9b58a3c907b416.jpg"]
+    }, {
+        "id": "00112233-4455-6677-8899-aabbccddeef1",
+        "name": "Blue Whale",
+        "avatarURI": "https://i.pinimg.com/originals/c7/48/ba/c748ba86e1232230d7e678b2ab4bcc58.jpg",
+        "description": "Blue whales are by far the biggest animals in the world. Even the biggest dinosaur that ever lived doesn't come close in size to the blue whale.",
+        "imagesURI": ["https://dl0.creation.com/fpimages/13412.jpg"]
+    }, {
+        "id": "00112233-4455-6677-8899-aabbccddeef3",
+        "name": "Fox",
+        "avatarURI": "https://static.boredpanda.com/blog/wp-content/uploads/2016/07/fox-faces-roeselien-raimond-fb__700-png.jpg",
+        "description": "Red foxes live around the world in many diverse habitats including forests, grasslands, mountains, and deserts. They also adapt well to human environments such as farms, suburban areas, and even large communities. The red fox's resourcefulness has earned it a legendary reputation for intelligence and cunning.",
+        "imagesURI": ["https://cdn.images.express.co.uk/img/dynamic/1/590x/london-news-fox-attack-woman-sleep-rabies-danger-977564.jpg?r=1533565086204"]
+    }, {
+        "id": "00112233-4455-6677-8899-aabbccddeef4",
+        "name": "Walrus",
+        "avatarURI": "https://live.staticflickr.com/1886/44655959902_b7a8f8b363_b.jpg",
+        "description": "The mustached and long-tusked walrus is most often found near the Arctic Circle, lying on the ice with hundreds of companions. These marine mammals are extremely sociable, prone to loudly bellowing and snorting at one another, but are aggressive during mating season. With wrinkled brown and pink hides, walruses are distinguished by their long white tusks, grizzly whiskers, flat flipper, and bodies full of blubber.",
+        "imagesURI": ["https://psmag.com/.image/t_share/MTM1MTE2NDM5NzA2MjAyMDgy/walrus-908609_1280jpg.jpg"]
+    }]
+}
