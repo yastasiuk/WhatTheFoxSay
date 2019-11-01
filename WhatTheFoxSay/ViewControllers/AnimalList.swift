@@ -57,7 +57,6 @@ struct AnimalList: View {
                 ScrollView(.vertical) {
                     VStack(alignment: .leading) {
                         ForEach(0..<self.state.animalRows, id: \.self){ rowIndex in
-                            // Implement columns/rows!
                             HStack(alignment: .center) {
                                 ForEach(0..<self.elementsPerColumn){ columnIndex in
                                     NavigationLink(
